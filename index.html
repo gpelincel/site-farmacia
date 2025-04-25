@@ -3,8 +3,9 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Guia de Medicamentos Controlados</title>
+		<title>GUIA INFORMATIVO SOBRE MEDICAMENTOS CONTROLADOS</title>
 		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="shortcut icon" href="pilulas.ico" type="image/x-icon" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -25,6 +26,27 @@
 				background-position: center;
 				background-size: cover;
 			}
+
+			.tab-link {
+				cursor: pointer;
+				transition: ease 0.25s;
+				border: 1px solid #00000000;
+				border-bottom: none;
+				border-radius: 10px 10px 0 0;
+			}
+
+			.tab-link:hover {
+				color: rgb(159 18 57 / var(--tw-text-opacity, 1));
+			}
+
+			.tab-active {
+				background: white;
+				border-color: #00000030;
+			}
+
+			.tab-active:hover {
+				color: rgb(244 63 94 / var(--tw-text-opacity, 1));
+			}
 		</style>
 	</head>
 	<body class="bg-white text-neutral-900">
@@ -42,201 +64,514 @@
 			</div>
 		</header>
 
-		<section class="bg-pink-50 py-16 lg:px-[85px] px-8">
-			<div class="px-4">
+		<nav class="pt-16 bg-pink-50 px-8">
+			<ul class="flex gap-2 border-b text-rose-500">
+				<li>
+					<a data-tab="psicotropicos" class="tab-link py-2 px-4 font-semibold uppercase text-2xl"
+						>Psicotrópicos</a
+					>
+				</li>
+				<li>
+					<a data-tab="antibioticos" class="tab-link tab-active py-2 px-4 font-semibold uppercase text-2xl"
+						>Antibióticos</a
+					>
+				</li>
+				<li>
+					<a data-tab="receituarios" class="tab-link py-2 px-4 font-semibold uppercase text-2xl"
+						>Receituários</a
+					>
+				</li>
+				<li>
+					<a data-tab="efeitos-colaterais" class="tab-link py-2 px-4 font-semibold uppercase text-2xl"
+						>Efeitos Colaterais</a
+					>
+				</li>
+			</ul>
+		</nav>
+
+		<section id="psicotropicos" class="content-tab" hidden>
+			<section class="bg-pink-50 py-16 lg:px-[85px] px-8">
+				<div class="px-4">
+					<div class="grid lg:grid-cols-3 gap-6">
+						<div class="bg-white p-8 text-center text-xl uppercase">
+							Esses medicamentos podem gerar efeitos colaterais graves, dependência
+							física ou psicológica.
+						</div>
+						<div class="bg-white p-8 text-center text-xl uppercase">
+							Riscos de intoxicação, reações severas ou overdose, se administrados sem
+							prescrição médica.
+						</div>
+						<div class="bg-white p-8 text-center text-xl uppercase">
+							É necessário um monitoramento rigoroso! Esteja atento ao seu corpo!
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="lg:px-[85px] px-8 bg-pink-50 py-12">
+				<h2 class="text-3xl md:text-5xl font-bold uppercase text-center mb-12">
+					Categorias de medicamentos controlados
+				</h2>
 				<div class="grid lg:grid-cols-3 gap-6">
-					<div class="bg-white p-8 text-center text-xl uppercase">
-						Esses medicamentos podem gerar efeitos colaterais graves, dependência
-						física ou psicológica.
-					</div>
-					<div class="bg-white p-8 text-center text-xl uppercase">
-						Riscos de intoxicação, reações severas ou overdose, se administrados sem
-						prescrição médica.
-					</div>
-					<div class="bg-white p-8 text-center text-xl uppercase">
-						É necessário um monitoramento rigoroso! Esteja atento ao seu corpo!
+					<article class="bg-white p-7">
+						<h3 class="text-rose-500 text-xl font-bold uppercase mb-4">Opioides</h3>
+						<p>
+							Agem nos receptores opioides. Promovem sensação de analgesia, euforia e
+							sedação. Exemplo: Morfina.
+						</p>
+					</article>
+					<article class="bg-white p-7">
+						<h3 class="text-rose-500 text-xl font-bold uppercase mb-4">
+							Benzodiazepínicos
+						</h3>
+						<p>
+							Depressores do sistema nervoso central. Indicados para ansiedade e
+							insônia. Podem causar sedação, dependência, tolerância e prejuízo
+							cognitivo.
+						</p>
+					</article>
+					<article class="bg-white p-7">
+						<h3 class="text-rose-500 text-xl font-bold uppercase mb-4">
+							Estimulantes do SNC
+						</h3>
+						<p>
+							Aumentam a atividade dopaminérgica e noradrenérgica. Indicado para TDAH,
+							narcolepsia e distúrbios cognitivos.
+						</p>
+					</article>
+					<article class="bg-white p-7">
+						<h3 class="text-rose-500 text-xl font-bold uppercase mb-4">
+							Antidepressivos
+						</h3>
+						<p>
+							Modulam neurotransmissores promovendo equilíbrio químico cerebral.
+							Efeitos colaterais: náusea, ganho de peso e insônia.
+						</p>
+					</article>
+					<article class="bg-white p-7">
+						<h3 class="text-rose-500 text-xl font-bold uppercase mb-4">
+							Antipsicóticos
+						</h3>
+						<p>
+							Moduladores dopaminérgicos usados para transtornos como esquizofrenia,
+							transtorno bipolar e psicose.
+						</p>
+					</article>
+					<article class="bg-white p-7">
+						<h3 class="text-rose-500 text-xl font-bold uppercase mb-4">
+							Anticonvulsivantes
+						</h3>
+						<p>
+							Modulam canais iônicos e neurotransmissores estabilizando a
+							excitabilidade neuronal. <b>Exemplos:</b> fenitoína, carbamazepina, lamotrigina,
+							pregabalina.
+						</p>
+					</article>
+				</div>
+				<p class="mt-4 text-sm text-right">
+					Fonte:
+					<a
+						target="_blank"
+						href="https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/controlados"
+						class="text-blue-500"
+						>Produtos controlados</a
+					>
+				</p>
+			</section>
+
+			<img src="./imgs/comprimidos.png" alt="" />
+
+			<section class="lg:px-[85px] px-8 bg-white py-24">
+				<h2 class="text-3xl md:text-5xl font-bold uppercase text-center mb-8">
+					Principais Benzodiazepínicos (BDZs)
+				</h2>
+				<p class="text-center text-rose-500 text-xl mb-12">
+					Lista dos principais BDZs e suas indicações médicas
+				</p>
+				<div class="grid lg:grid-cols-3 gap-6">
+					<article class="bg-pink-50 p-7">
+						<h3 class="text-rose-500 font-bold uppercase mb-3">Alprazolam</h3>
+						<p>Indicado para tratamento de ansiedade.</p>
+					</article>
+					<article class="bg-pink-50 p-7">
+						<h3 class="text-rose-500 font-bold uppercase mb-3">Clordiazepóxido</h3>
+						<p>Ansiedade, abstinência alcoólica e pré-medicação anestésica.</p>
+					</article>
+					<article class="bg-pink-50 p-7">
+						<h3 class="text-rose-500 font-bold uppercase mb-3">Clonazepam</h3>
+						<p>Tratamento de convulsões e ansiedade.</p>
+					</article>
+					<article class="bg-pink-50 p-7">
+						<h3 class="text-rose-500 font-bold uppercase mb-3">Diazepam</h3>
+						<p>Ansiedade, crises epiléticas e relaxamento muscular.</p>
+					</article>
+					<article class="bg-pink-50 p-7">
+						<h3 class="text-rose-500 font-bold uppercase mb-3">Flurazepam</h3>
+						<p>Indicado para insônia.</p>
+					</article>
+					<article class="bg-pink-50 p-7">
+						<h3 class="text-rose-500 font-bold uppercase mb-3">Lorazepam</h3>
+						<p>Para ansiedade e como medicação pré-anestésica.</p>
+					</article>
+				</div>
+				<p class="mt-4 text-sm text-right">
+					Fonte:
+					<a
+						href="https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/controlados/lista-substancias"
+						target="_blank"
+						class="text-blue-500"
+						>Lista de substâncias sujeitas a controle especial no Brasil</a
+					>
+				</p>
+			</section>
+
+			<section class="lg:px-[85px] px-8 py-12">
+				<h2 class="text-3xl md:text-5xl font-bold uppercase text-center mb-8">
+					Efeitos Comuns dos BDZs
+				</h2>
+				<div class="grid lg:grid-cols-3 gap-2 justify-items-center pt-12">
+					<img class="w-full" src="./imgs/efeitos-colaterais.png" alt="" />
+					<ul
+						class="space-y-4 text-xl uppercase list-disc font-semibold w-full lg:list-outside list-inside">
+						<li>Sedativos</li>
+						<li>Hipnóticos</li>
+						<li>Ansiolíticos</li>
+						<li>
+							Relaxantes <br />
+							musculares
+						</li>
+						<li>Anticonvulsivantes</li>
+					</ul>
+					<div>
+						<p class="text-base font-thin">
+							O mecanismo de ação dos medicamentos benzodiazepínicos baseia-se no
+							aumento da atividade de um importante neurotransmissor inibitório no
+							cérebro, o Ácido Gama Aminobutírico (GABA).
+						</p>
+						<div
+							class="mt-6 bg-rose-500 inline-block text-white text-sm font-bold uppercase px-6 py-2">
+							Importante!
+						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+				<p class="mt-4 text-sm text-right">
+					Fonte:
+					<a
+						href="https://www.msdmanuals.com/pt/profissional/tópicos-especiais/drogas-ilícitas-e-intoxicantes/sedativos"
+						target="_blank"
+						class="text-blue-500"
+						>Sedativos</a
+					>
+				</p>
+			</section>
 
-		<section class="lg:px-[85px] px-8 bg-pink-50 py-12">
-			<h2 class="text-3xl md:text-5xl font-bold uppercase text-center mb-12">
-				Categorias de medicamentos controlados
-			</h2>
-			<div class="grid lg:grid-cols-3 gap-6">
-				<article class="bg-white p-7">
-					<h3 class="text-rose-500 text-xl font-bold uppercase mb-4">Opioides</h3>
-					<p>
-						Agem nos receptores opioides. Promovem sensação de analgesia, euforia e
-						sedação. Exemplo: Morfina.
-					</p>
-				</article>
-				<article class="bg-white p-7">
-					<h3 class="text-rose-500 text-xl font-bold uppercase mb-4">
-						Benzodiazepínicos
-					</h3>
-					<p>
-						Depressores do sistema nervoso central. Indicados para ansiedade e
-						insônia. Podem causar sedação, dependência, tolerância e prejuízo
-						cognitivo.
-					</p>
-				</article>
-				<article class="bg-white p-7">
-					<h3 class="text-rose-500 text-xl font-bold uppercase mb-4">
-						Estimulantes do SNC
-					</h3>
-					<p>
-						Aumentam a atividade dopaminérgica e noradrenérgica. Indicado para TDAH,
-						narcolepsia e distúrbios cognitivos.
-					</p>
-				</article>
-				<article class="bg-white p-7">
-					<h3 class="text-rose-500 text-xl font-bold uppercase mb-4">
-						Antidepressivos
-					</h3>
-					<p>
-						Modulam neurotransmissores promovendo equilíbrio químico cerebral. Efeitos
-						colaterais: náusea, ganho de peso e insônia.
-					</p>
-				</article>
-				<article class="bg-white p-7">
-					<h3 class="text-rose-500 text-xl font-bold uppercase mb-4">
-						Antipsicóticos
-					</h3>
-					<p>
-						Moduladores dopaminérgicos usados para transtornos como esquizofrenia,
-						transtorno bipolar e psicose.
-					</p>
-				</article>
-				<article class="bg-white p-7">
-					<h3 class="text-rose-500 text-xl font-bold uppercase mb-4">
-						Anticonvulsivantes
-					</h3>
-					<p>
-						Modulam canais iônicos e neurotransmissores estabilizando a excitabilidade
-						neuronal. Exemplos: fenitoína, carbamazepina, lamotrigina, pregabalina.
-					</p>
-				</article>
-			</div>
-			<p class="mt-4 text-sm text-right">
-				Fonte: <a href="#" class="text-blue-500">Produtos controlados</a>
-			</p>
-		</section>
-
-		<img src="./imgs/comprimidos.png" alt="" />
-
-		<section class="lg:px-[85px] px-8 bg-white py-24">
-			<h2 class="text-3xl md:text-5xl font-bold uppercase text-center mb-8">
-				Principais Benzodiazepínicos (BDZs)
-			</h2>
-			<p class="text-center text-rose-500 text-xl mb-12">
-				Lista dos principais BDZs e suas indicações médicas
-			</p>
-			<div class="grid lg:grid-cols-3 gap-6">
-				<article class="bg-pink-50 p-7">
-					<h3 class="text-rose-500 font-bold uppercase mb-3">Alprazolam</h3>
-					<p>Indicado para tratamento de ansiedade.</p>
-				</article>
-				<article class="bg-pink-50 p-7">
-					<h3 class="text-rose-500 font-bold uppercase mb-3">Clordiazepóxido</h3>
-					<p>Ansiedade, abstinência alcoólica e pré-medicação anestésica.</p>
-				</article>
-				<article class="bg-pink-50 p-7">
-					<h3 class="text-rose-500 font-bold uppercase mb-3">Clonazepam</h3>
-					<p>Tratamento de convulsões e ansiedade.</p>
-				</article>
-				<article class="bg-pink-50 p-7">
-					<h3 class="text-rose-500 font-bold uppercase mb-3">Diazepam</h3>
-					<p>Ansiedade, crises epiléticas e relaxamento muscular.</p>
-				</article>
-				<article class="bg-pink-50 p-7">
-					<h3 class="text-rose-500 font-bold uppercase mb-3">Flurazepam</h3>
-					<p>Indicado para insônia.</p>
-				</article>
-				<article class="bg-pink-50 p-7">
-					<h3 class="text-rose-500 font-bold uppercase mb-3">Lorazepam</h3>
-					<p>Para ansiedade e como medicação pré-anestésica.</p>
-				</article>
-			</div>
-			<p class="mt-4 text-sm text-right">
-				Fonte:
-				<a href="#" class="text-blue-500"
-					>Lista de substâncias sujeitas a controle especial no Brasil</a
-				>
-			</p>
-		</section>
-
-		<section class="lg:px-[85px] px-8 py-12">
-			<h2 class="text-3xl md:text-5xl font-bold uppercase text-center mb-8">
-				Efeitos Comuns dos BDZs
-			</h2>
-			<div class="grid lg:grid-cols-3 gap-2 justify-items-center pt-12">
-				<img class="w-full" src="./imgs/efeitos-colaterais.png" alt="" />
-				<ul class="space-y-4 text-xl uppercase list-disc font-semibold w-full lg:list-outside list-inside">
-					<li>Sedativos</li>
-					<li>Hipnóticos</li>
-					<li>Ansiolíticos</li>
-					<li>Relaxantes <br> musculares</li>
-					<li>Anticonvulsivantes</li>
-				</ul>
-				<div>
-					<p class="text-base font-thin">
-						O mecanismo de ação dos medicamentos benzodiazepínicos baseia-se no
-						aumento da atividade de um importante neurotransmissor inibitório no
-						cérebro, o Ácido Gama Aminobutírico (GABA).
-					</p>
-					<div
-						class="mt-6 bg-rose-500 inline-block text-white text-sm font-bold uppercase px-6 py-2">
-						Importante!
+			<section class="bg-pink-50 lg:px-[85px] px-8 pt-16 pb-4">
+				<h4 class="uppercase text-rose-500 mb-6 text-2xl">
+					informações adicionais
+				</h4>
+				<div class="grid lg:grid-cols-2 justify-items-center gap-28">
+					<div>
+						<h2 class="text-3xl md:text-5xl font-bold uppercase mb-8">
+							Por quanto tempo posso usar esses medicamentos?
+						</h2>
+						<div
+							class="bg-rose-500 inline-block text-white text-sm font-bold uppercase px-6 py-2">
+							Anota aí!
+						</div>
+					</div>
+					<div class="lg:w-3/4">
+						<p class="text-base leading-relaxed mb-6 font-extralight leading-[10px]">
+							Os medicamentos BDZs devem ser usados somente por um curto período de
+							tempo. Quando ultrapassam períodos de 4 a 6 semanas, podem provocar
+							tolerância, dependência e crises de abstinência. Fique atento!!
+						</p>
 					</div>
 				</div>
-			</div>
-			<p class="mt-4 text-sm text-right">
-				Fonte: <a href="#" class="text-blue-500">Sedativos</a>
-			</p>
+				<p class="mt-4 text-sm text-right">
+					Fonte:
+					<a
+						href="https://aps-repo.bvs.br/aps/quais-os-riscos-do-uso-prolongado-dos-benzodiazepinicos/"
+						class="text-blue-500"
+						>Riscos do uso prolongado dos benzodiazepínicos</a
+					>
+				</p>
+			</section>
 		</section>
 
-		<section class="bg-pink-50 lg:px-[85px] px-8 pt-16 pb-4">
-            <h4 class="uppercase text-rose-500 mb-6 text-2xl">informações adicionais</h4>
-            <div class="grid lg:grid-cols-2 justify-items-center gap-28">
-                <div>
-                    <h2 class="text-3xl md:text-5xl font-bold uppercase mb-8">
-                        Por quanto tempo posso usar esses medicamentos?
-                    </h2>
-                    <div
-                        class="bg-rose-500 inline-block text-white text-sm font-bold uppercase px-6 py-2">
-                        Anota aí!
-                    </div>
-                </div>
-                <div class="lg:w-3/4">
-                    <p class="text-base leading-relaxed mb-6 font-extralight leading-[10px]">
-                        Os medicamentos BDZs devem ser usados somente por um curto período de tempo.
-                        Quando ultrapassam períodos de 4 a 6 semanas, podem provocar tolerância,
-                        dependência e crises de abstinência. Fique atento!!
-                    </p>
-                </div>
-            </div>
-			<p class="mt-4 text-sm text-right">
-				Fonte:
-				<a href="#" class="text-blue-500"
-					>Riscos do uso prolongado dos benzodiazepínicos</a
-				>
-			</p>
+		<section id="antibioticos" class="content-tab">
+			<section class="bg-pink-50 py-16 lg:px-[85px] px-8">
+				<div class="px-4 space-y-4 text-justify">
+					<h1 class="text-5xl font-bold uppercase text-center mb-8">O Que São Antibióticos?</h1>
+					<p>Antibióticos são medicamentos usados para tratar infecções bacterianas, podendo matar as bactérias ou impedir seu crescimento. Eles agem em componentes fundamentais das bactérias, sem prejudicar as células humanas. Existem antibióticos de amplo espectro, que atacam várias bactérias, e de espectro estreito, direcionados a grupos específicos.</p>
+					<p>Os antibióticos só podem ser liberados com receita médica, de acordo com o tratamento que o médico prescreveu, isso acontece para evitar o uso indiscriminado dessa classe de medicamentos, evitando que infecções se agravem por conta da resistência bacteriana. ((RDC) 471/2021)</p>
+
+					<p class="text-xs text-right italic">BRUNTON, Laurence L. et al. Goodman & Gilman’s: The pharmacological basis of therapeutics. 13. ed. New York: McGraw-Hill, 2018.</p>
+				</div>
+			</section>
+
+			<section class="bg-pink-50 py-16 lg:px-[85px] px-12">
+					<h1 class="text-3xl md:text-5xl font-bold uppercase text-center mb-16">A Importância dos Antibióticos e os Riscos do Uso Indevido</h1>
+					<div class="grid grid-cols-2 gap-8">
+						<div class="space-y-4 text-justify">
+							<h1 class="text-3xl font-bold uppercase text-center mb-8 text-rose-500">A importância dos <br> antibióticos</h1>
+							<p>Os antibióticos revolucionaram a medicina moderna. Antes de sua descoberta, doenças bacterianas como pneumonia, tuberculose e meningite eram frequentemente fatais. Com a introdução desses medicamentos, foi possível reduzir drasticamente a mortalidade por infecções e controlar surtos epidêmicos, promovendo um grande avanço na saúde pública.</p>
+							<p>Além disso, eles tornaram procedimentos médicos como cirurgias, transplantes e quimioterapia mais seguros, protegendo pacientes imunossuprimidos contra infecções graves.</p>
+		
+							<p class="text-xs text-right italic">MADIGAN, Michael T. et al. Brock: biologia dos micro-organismos. 15. ed. Porto Alegre: Artmed, 2019.</p>
+							<p class="text-xs text-right italic">LEDERBERG, J. Infectious history. Science, Washington, v. 288, n. 5464, p. 287-293, 2000. DOI: 10.1126/science.288.5464.287.</p>
+						</div>
+						<div class="space-y-4 text-justify">
+							<h1 class="text-3xl font-bold uppercase text-center mb-8 text-rose-500">Uso indiscriminado e seus perigos</h1>
+							<p>O uso excessivo e inadequado de antibióticos, principalmente sem prescrição médica, tem contribuído para o avanço da resistência bacteriana — um fenômeno onde bactérias tornam-se imunes aos medicamentos que antes eram eficazes. Isso representa uma ameaça à saúde global, já que infecções comuns voltam a se tornar perigosas e difíceis de tratar.</p>
+		
+							<p class="text-xs text-right italic">Fonte: BRASIL. Ministério da Saúde. Uso racional de antimicrobianos e resistência bacteriana. Brasília: Ministério da Saúde, 2020.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<img class="max-h-96 w-full object-cover" src="./imgs/pills-1.jpg" alt="">
+
+			<section class="lg:px-[85px] px-8 py-12">
+				<h2 class="text-3xl md:text-5xl font-bold uppercase text-center mb-12">
+					Principais Consequências do Uso Abusivo
+				</h2>
+				<div class="grid lg:grid-cols-3 gap-6">
+					<article class="bg-pink-50 p-7 space-y-4">
+						<h3 class="text-rose-500 text-xl font-bold uppercase mb-4">Resistência Antimicrobiana</h3>
+						<p>
+							O uso incorreto elimina bactérias sensíveis e favorece a multiplicação das resistentes, dando origem às chamadas “superbactérias”. Essas infecções exigem tratamentos mais longos, caros e, às vezes, sem opções eficazes.
+						</p>
+						<p class="text-xs italic">WORLD HEALTH ORGANIZATION (WHO). Antimicrobial resistance: global report on surveillance. Geneva: WHO, 2014.</p>
+					</article>
+					<article class="bg-pink-50 p-7 space-y-4">
+						<h3 class="text-rose-500 text-xl font-bold uppercase mb-4">
+							Impacto na <br> Saúde Pública
+						</h3>
+						<p>
+							Com a resistência, aumentam-se os custos com internações, exames e tratamentos com antibióticos de última geração — que nem sempre estão disponíveis para toda a população.
+						</p>
+						<p class="text-xs italic">WORLD HEALTH ORGANIZATION (WHO), 2014; BRASIL, 2020.</p>
+					</article>
+					<article class="bg-pink-50 p-7 space-y-4">
+						<h3 class="text-rose-500 text-xl font-bold uppercase mb-4">
+							Desequilíbrio da Microbiota
+						</h3>
+						<p>
+							Antibióticos também eliminam bactérias benéficas do corpo, especialmente da microbiota intestinal, favorecendo infecções como candidíase ou colite causada por Clostridioides difficile.
+						</p>
+						<p class="text-xs italic">BRASIL. Ministério da Saúde, 2020.</p>
+					</article>
+					<article class="bg-pink-50 p-7 space-y-4">
+						<h3 class="text-rose-500 text-xl font-bold uppercase mb-4">
+							Reações <br> Adversas
+						</h3>
+						<p>
+							Efeitos colaterais são comuns e variam desde reações alérgicas e desconfortos gastrointestinais até toxicidade hepática e renal.
+						</p>
+						<p class="text-xs italic">MADIGAN, Michael T. et al., 2019.</p>
+					</article>
+					<article class="bg-pink-50 p-7 space-y-4">
+						<h3 class="text-rose-500 text-xl font-bold uppercase mb-4">
+							Dificuldade no Diagnóstico
+						</h3>
+						<p>
+							A automedicação pode mascarar sintomas e dificultar a identificação correta da infecção, o que compromete o tratamento.
+						</p>
+						<p class="text-xs italic">Fonte: BRASIL. Ministério da Saúde, 2020.</p>
+					</article>
+				</div>
+				<p class="mt-4 text-sm text-right">
+					Fonte:
+					<a
+						target="_blank"
+						href="https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/controlados"
+						class="text-blue-500"
+						>Produtos controlados</a
+					>
+				</p>
+			</section>
+
+			<section class="bg-pink-50 lg:px-[85px] px-8 pt-16 pb-4">
+				<div class="grid lg:grid-cols-2 items-center gap-28">
+					<div>
+						<h4 class="uppercase text-rose-500 mb-6 text-2xl">
+							Como usar antibióticos
+						</h4>
+						<h2 class="text-5xl font-bold uppercase mb-8">
+							Com segurança
+						</h2>
+						<div
+							class="bg-rose-500 inline-block text-white text-sm font-bold uppercase px-6 py-2">
+							Anota aí!
+						</div>
+					</div>
+					<div class="lg:w-3/4">
+						<ul class="list-disc space-y-2 text-xl">
+							<li>Utilize apenas com prescrição médica.</li>
+							<li>Siga corretamente dosagem e duração do tratamento.</li>
+							<li>Nunca compartilhe antibióticos.</li>
+							<li>Não interrompa o tratamento antes do indicado, mesmo com melhora dos sintomas.</li>
+						</ul>
+					</div>
+				</div>
+				<p class="mt-4 text-sm text-right">
+					Fonte:
+					<a
+						href="https://aps-repo.bvs.br/aps/quais-os-riscos-do-uso-prolongado-dos-benzodiazepinicos/"
+						class="text-blue-500"
+						>BRASIL. Ministério da Saúde, 2020</a
+					>
+				</p>
+			</section>
+
+			<section class="lg:px-[85px] px-8 pb-4">
+				<div class="grid lg:grid-cols-2 items-center gap-28">
+					<div class="flex flex-col items-center">
+						<img class="w-3/4" src="./imgs/pills-ilustration.png" alt="">
+					</div>
+					<div>
+						<h2 class="text-5xl text-rose-500 font-bold uppercase mb-8">
+							O que podemos Fazer?
+						</h2>
+						<ul class="list-disc list-inside space-y-2 text-xl">
+							<li>Promover campanhas de conscientização.</li>
+							<li>Fiscalizar a venda de antibióticos.</li>
+							<li>Apoiar a pesquisa científica em novas terapias.</li>
+							<li>Incentivar o uso racional de medicamentos.</li>
+						</ul>
+					</div>
+				</div>
+				<p class="mt-4 text-sm text-right">
+					Fonte:
+					<a
+						href="https://aps-repo.bvs.br/aps/quais-os-riscos-do-uso-prolongado-dos-benzodiazepinicos/"
+						class="text-blue-500"
+						>WORLD HEALTH ORGANIZATION (WHO), 2014; BRASIL, 2020.</a
+					>
+				</p>
+			</section>
+
+			<section class="lg:px-[85px] px-8 bg-rose-50 pt-24 pb-12">
+				<h2 class="text-3xl md:text-5xl font-bold uppercase text-center mb-8">
+					Principais Antibióticos
+				</h2>
+				<p class="text-center text-rose-500 text-xl mb-12">
+					Lista dos Beta-Lactâmicos <br>
+					Inibem a síntese da parede celular bacteriana
+				</p>
+				<div class="grid lg:grid-cols-3 gap-6">
+					<article class="bg-white p-7 space-y-2">
+						<h3 class="text-rose-500 font-bold uppercase mb-3">Penicilinas</h3>
+						<p><b>Indicações:</b> Infecções respiratórias, infecções de pele, infecções urinárias, meningite bacteriana.</p>
+						<p><b>Exemplos:</b> Penicilina G, Amoxicilina, Ampicilina, Piperacilina.</p>
+					</article>
+					<article class="bg-white p-7 space-y-2">
+						<h3 class="text-rose-500 font-bold uppercase mb-3">Cefalosporinas</h3>
+						<p><b>Indicações:</b> Infecções respiratórias, infecções urinárias, meningite, sepse.</p>
+						<p><b>Exemplos:</b> Ceftriaxona, Cefalexina, Cefuroxima, Ceftazidima.</p>
+					</article>
+					<article class="bg-white p-7 space-y-2">
+						<h3 class="text-rose-500 font-bold uppercase mb-3">Carbapenêmicos</h3>
+						<p><b>Indicações:</b> Infecções graves por bactérias multirresistentes, infecções intra-abdominais, gangrena, sepse, pneumonia.</p>
+						<p><b>Exemplos:</b> Imipeném, Meropenem, Ertapenem.</p>
+					</article>
+					<article class="bg-white p-7 space-y-2">
+						<h3 class="text-rose-500 font-bold uppercase mb-3">Monobactâmicos</h3>
+						<p><b>Indicações:</b> Infecções por bactérias Gram-negativas, especialmente em pacientes alérgicos a penicilinas.</p>
+						<p><b>Exemplos:</b> Aztreonam</p>
+					</article>
+				</div>
+				<p class="text-center text-rose-500 text-xl my-12">
+					Lista dos principais antibióticos e suas indicações médicas
+				</p>
+				<div class="grid lg:grid-cols-3 gap-6">
+					<article class="bg-white p-7 space-y-2">
+						<h3 class="text-rose-500 font-bold uppercase mb-3">Aminoglicosídeos</h3>
+						<p> Inibem a síntese proteica bacteriana</p>
+						<p><b>Indicações:</b> Infecções graves por bactérias Gram-negativas, endocardite, sepse. </p>
+						<p><b>Exemplos:</b> Gentamicina, Amicacina, Tobramicina.</p>
+					</article>
+					<article class="bg-white p-7 space-y-2">
+						<h3 class="text-rose-500 font-bold uppercase mb-3">Macrolídeos</h3>
+						<p>Inibem a síntese proteica bacteriana.</p>
+						<p><b>Indicações:</b> Infecções respiratórias, infecções de pele, infecções por bactérias atípicas.</p>
+						<p><b>Exemplos:</b> Eritromicina, Azitromicina, Claritromicina.</p>
+					</article>
+					<article class="bg-white p-7 space-y-2">
+						<h3 class="text-rose-500 font-bold uppercase mb-3">Quinolonas e Fluoroquinolonas</h3>
+						<p>Inibem a replicação do DNA bacteriano.</p>
+						<p><b>Indicações:</b> Infecções urinárias, infecções respiratórias, infecções gastrointestinais, infecções ósseas.</p>
+						<p><b>Exemplos:</b> Ciprofloxacina, Levofloxacina, Moxifloxacina.</p>
+					</article>
+					<article class="bg-white p-7 space-y-2">
+						<h3 class="text-rose-500 font-bold uppercase mb-3">Sulfonamidas e Trimetoprima</h3>
+						<p>Inibem a síntese de ácido fólico.</p>
+						<p><b>Indicações:</b> Infecções urinárias, pneumocistose, toxoplasmose, malária.</p>
+						<p><b>Exemplos:</b> Sulfametoxazol + Trimetoprima (Bactrim).</p>
+					</article>
+					<article class="bg-white p-7 space-y-2">
+						<h3 class="text-rose-500 font-bold uppercase mb-3">Lincosamidas</h3>
+						<p>Inibem a síntese proteica bacteriana.</p>
+						<p><b>Indicações:</b> Infecções de pele, infecções intra-abdominais, infecções por bactérias anaeróbias, malária falciparum.</p>
+						<p><b>Exemplos:</b> Clindamicina.</p>
+					</article>
+					<article class="bg-white p-7 space-y-2">
+						<h3 class="text-rose-500 font-bold uppercase mb-3">Polimixinas</h3>
+						<p>Destroem a membrana celular bacteriana.</p>
+						<p><b>Indicações:</b> Infecções graves por bactérias Gram-negativas multirresistentes.</p>
+						<p><b>Exemplos:</b> Vancomicina, Teicoplanina.</p>
+					</article>
+					<article class="bg-white p-7 space-y-2">
+						<h3 class="text-rose-500 font-bold uppercase mb-3">Nitrofuranos</h3>
+						<p>Danificam o DNA bacteriano.</p>
+						<p><b>Indicações:</b> Infecções urinárias não complicadas (cistite).</p>
+						<p><b>Exemplos:</b> Nitrofurantoína.</p>
+					</article>
+					<article class="bg-white p-7 space-y-2">
+						<h3 class="text-rose-500 font-bold uppercase mb-3">Rifamicinas</h3>
+						<p>Inibem a síntese de RNA bacteriano.</p>
+						<p><b>Indicações:</b> Tuberculose, infecções por Mycobacterium, profilaxia de meningite.</p>
+						<p><b>Exemplos:</b> Rifampicina, Rifabutina.</p>
+					</article>
+					<article class="bg-white p-7 space-y-2">
+						<h3 class="text-rose-500 font-bold uppercase mb-3">Metronidazol</h3>
+						<p>Ele entra nas paredes celulares bacterianas, rompe o DNA e inibe a síntese do DNA em certos microrganismos.</p>
+						<p><b>Indicações:</b> Infecções por bactérias anaeróbias, protozoários (como Giardia e Trichomonas).</p>
+					</article>
+				</div>
+				<!-- <p class="mt-4 text-sm text-right">
+					Fonte:
+					<a
+						href="https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/controlados/lista-substancias"
+						target="_blank"
+						class="text-blue-500"
+						>Lista de substâncias sujeitas a controle especial no Brasil</a
+					>
+				</p> -->
+			</section>
+		</section>
+
+		<section id="receituarios" class="content-tab" hidden>
+			<h1>Receituários</h2>
+		</section>
+
+		<section id="efeitos-colaterais" class="content-tab" hidden>
+			<h1>Efeitos Colaterais</h1>
 		</section>
 
 		<section class="flex flex-col items-center py-16 lg:px-[85px] px-8">
 			<h2 class="text-3xl md:text-5xl font-bold uppercase text-center mb-8">
-				Se souber de venda ilegal:<br>Denuncie!
+				Se souber de venda ilegal:<br />Denuncie!
 			</h2>
 			<p class="text-center text-rose-500 text-xl mb-12">
 				A venda de medicamentos controlados sem prescrição médica ou de forma
-                <br>
+				<br />
 				adulterada é crime (Lei 6.437/1977)!
 			</p>
 			<div class="grid lg:grid-cols-2 gap-4 w-3/4">
 				<article class="flex flex-col items-center text-center space-y-4">
-                    <img class="lg:h-80" src="./imgs/saude.png" alt="">
+					<img class="lg:h-80" src="./imgs/saude.png" alt="" />
 					<h3 class="text-xl font-bold uppercase">Ligue para o 136</h3>
 					<p>
 						É o número gratuito do Ministério da Saúde para denúncias, reclamações,
@@ -244,7 +579,7 @@
 					</p>
 				</article>
 				<article class="flex flex-col items-center text-center space-y-4">
-                    <img class="lg:h-80" src="./imgs/anvisa.jpeg" alt="">
+					<img class="lg:h-80" src="./imgs/anvisa.jpeg" alt="" />
 					<h3 class="text-xl font-bold uppercase">Denuncie à ANVISA</h3>
 					<p>
 						Você pode fazer isso pela Ouvidoria, por formulário eletrônico ou ligando
@@ -254,26 +589,31 @@
 			</div>
 			<p class="self-end mt-8 text-sm text-right">
 				Fonte:
-				<a href="#" class="text-blue-500">LEI Nº 6.437, DE 20 DE AGOSTO DE 1977</a>
+				<a
+					href="https://www.planalto.gov.br/ccivil_03/leis/l6437.htm"
+					target="_blank"
+					class="text-blue-500"
+					>LEI Nº 6.437, DE 20 DE AGOSTO DE 1977</a
+				>
 			</p>
 		</section>
 
 		<section class="bg-rose-500 pt-16 text-white">
-			<div class="mx-auto flex flex-col-reverse lg:flex-row items-center gap-12 px-6">
-				<img
-					src="./imgs/medico.png"
-					alt="Ajuda"
-					class="w-full max-w-sm mx-auto" />
+			<div
+				class="mx-auto flex flex-col-reverse lg:flex-row items-center gap-12 px-6">
+				<img src="./imgs/medico.png" alt="Ajuda" class="w-full max-w-sm mx-auto" />
 				<div class="max-w-xl space-y-6">
 					<h2 class="text-4xl font-bold uppercase">Busque ajuda</h2>
 					<p class="text-2xl leading-relaxed">
 						Se você utiliza os medicamentos controlados com frequência e acredita que
 						eles não estão te fazendo bem, não hesite em procurar ajuda.
 					</p>
-					<div
+					<a
+						href="https://www.gov.br/mds/pt-br/obid/tratamento-e-reinsercao-social"
+						target="_blank"
 						class="bg-white text-rose-500 font-bold text-sm uppercase px-6 py-3 inline-block">
 						Clique aqui para saber mais
-					</div>
+					</a>
 				</div>
 			</div>
 		</section>
@@ -299,5 +639,18 @@
 		<footer class="bg-zinc-800 text-white py-6 text-center mt-16">
 			<p class="text-sm">© 2024 Todos os direitos reservados</p>
 		</footer>
+		<script>
+			document.addEventListener("click", (e) => {
+				let element = e.target;
+
+				if (element.matches(".tab-link") && !element.matches(".tab-active")) {
+					document.querySelector(".tab-active").classList.remove("tab-active");
+					element.classList.add("tab-active");
+					document.querySelectorAll(".content-tab").forEach((e) => e.hidden = true);
+					let tab = element.dataset.tab;
+					document.querySelector("#"+tab).hidden = false;
+				}
+			});
+		</script>
 	</body>
 </html>

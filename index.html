@@ -64,33 +64,33 @@
 			</div>
 		</header>
 
-		<nav class="pt-16 bg-pink-50 px-8">
-			<ul class="flex lg:flex-row flex-col gap-2 border-b text-rose-500">
+		<nav class="pt-16 bg-pink-50 lg:px-8 px-2">
+			<ul class="flex flex-wrap gap-2 border-b text-rose-500">
 				<li>
 					<a
 						data-tab="psicotropicos"
-						class="tab-link py-2 px-4 font-semibold uppercase text-2xl"
+						class="tab-link py-2 px-4 font-semibold uppercase md:text-2xl text-lg"
 						>Psicotrópicos</a
 					>
 				</li>
 				<li>
 					<a
 						data-tab="antibioticos"
-						class="tab-link py-2 px-4 font-semibold uppercase text-2xl"
+						class="tab-link py-2 px-4 font-semibold uppercase md:text-2xl text-lg"
 						>Antibióticos</a
 					>
 				</li>
 				<li>
 					<a
 						data-tab="receituarios"
-						class="tab-link tab-active py-2 px-4 font-semibold uppercase text-2xl"
+						class="tab-link py-2 px-4 font-semibold uppercase md:text-2xl text-lg"
 						>Receituários</a
 					>
 				</li>
 				<li>
 					<a
 						data-tab="efeitos-colaterais"
-						class="tab-link py-2 px-4 font-semibold uppercase text-2xl"
+						class="tab-link tab-active py-2 px-4 font-semibold uppercase md:text-2xl text-lg"
 						>Efeitos Colaterais</a
 					>
 				</li>
@@ -117,7 +117,7 @@
 			</section>
 
 			<section class="lg:px-[85px] px-8 bg-pink-50 py-12">
-				<h2 class="text-3xl md:text-5xl font-bold uppercase text-center mb-12">
+				<h2 class="lg:text-5xl text-3xl font-bold uppercase text-center mb-12">
 					Categorias de medicamentos controlados
 				</h2>
 				<div class="grid lg:grid-cols-3 gap-6">
@@ -190,7 +190,7 @@
 			<img src="./imgs/comprimidos.png" alt="" />
 
 			<section class="lg:px-[85px] px-8 bg-white py-24">
-				<h2 class="text-3xl md:text-5xl font-bold uppercase text-center mb-8">
+				<h2 class="lg:text-5xl text-3xl font-bold uppercase text-center mb-8">
 					Principais Benzodiazepínicos (BDZs)
 				</h2>
 				<p class="text-center text-rose-500 text-xl mb-12">
@@ -234,7 +234,7 @@
 			</section>
 
 			<section class="lg:px-[85px] px-8 py-12">
-				<h2 class="text-3xl md:text-5xl font-bold uppercase text-center mb-8">
+				<h2 class="lg:text-5xl text-3xl font-bold uppercase text-center mb-8">
 					Efeitos Comuns dos BDZs
 				</h2>
 				<div class="grid lg:grid-cols-3 gap-2 justify-items-center pt-12">
@@ -279,7 +279,7 @@
 				</h4>
 				<div class="grid lg:grid-cols-2 justify-items-center gap-28">
 					<div>
-						<h2 class="text-3xl md:text-5xl font-bold uppercase mb-8">
+						<h2 class="lg:text-5xl text-3xl font-bold uppercase mb-8">
 							Por quanto tempo posso usar esses medicamentos?
 						</h2>
 						<div
@@ -309,7 +309,7 @@
 		<section id="antibioticos" class="content-tab" hidden>
 			<section class="bg-pink-50 py-16 lg:px-[85px] px-8">
 				<div class="px-4 space-y-4 text-justify">
-					<h1 class="text-5xl font-bold uppercase text-center mb-8">
+					<h1 class="lg:text-5xl text-3xl font-bold uppercase text-center mb-8">
 						O Que São Antibióticos?
 					</h1>
 					<p>
@@ -334,7 +334,7 @@
 			</section>
 
 			<section class="bg-pink-50 py-16 lg:px-[85px] px-12">
-				<h1 class="text-3xl md:text-5xl font-bold uppercase text-center mb-16">
+				<h1 class="lg:text-5xl text-3xl font-bold uppercase text-center mb-16">
 					A Importância dos Antibióticos e os Riscos do Uso Indevido
 				</h1>
 				<div class="grid lg:grid-cols-2 gap-8">
@@ -388,7 +388,7 @@
 			<img class="max-h-96 w-full object-cover" src="./imgs/pills-1.jpg" alt="" />
 
 			<section class="lg:px-[85px] px-8 py-12">
-				<h2 class="text-3xl md:text-5xl font-bold uppercase text-center mb-12">
+				<h2 class="lg:text-5xl text-3xl font-bold uppercase text-center mb-12">
 					Principais Consequências do Uso Abusivo
 				</h2>
 				<div class="grid lg:grid-cols-3 gap-6">
@@ -454,7 +454,7 @@
 						<p class="text-xs italic">Fonte: BRASIL. Ministério da Saúde, 2020.</p>
 					</article>
 				</div>
-				<p class="mt-4 text-sm text-right">
+				<!-- <p class="mt-4 text-sm text-right">
 					Fonte:
 					<a
 						target="_blank"
@@ -462,7 +462,7 @@
 						class="text-blue-500"
 						>Produtos controlados</a
 					>
-				</p>
+				</p> -->
 			</section>
 
 			<section class="bg-pink-50 lg:px-[85px] px-8 pt-16 pb-4">
@@ -471,7 +471,9 @@
 						<h4 class="uppercase text-rose-500 mb-6 text-2xl">
 							Como usar antibióticos
 						</h4>
-						<h2 class="text-5xl font-bold uppercase mb-8">Com segurança</h2>
+						<h2 class="lg:text-5xl text-3xl font-bold uppercase mb-8">
+							Com segurança
+						</h2>
 						<div
 							class="bg-rose-500 inline-block text-white text-sm font-bold uppercase px-6 py-2">
 							Anota aí!
@@ -491,11 +493,7 @@
 				</div>
 				<p class="mt-4 text-sm text-right">
 					Fonte:
-					<a
-						href="https://aps-repo.bvs.br/aps/quais-os-riscos-do-uso-prolongado-dos-benzodiazepinicos/"
-						class="text-blue-500"
-						>BRASIL. Ministério da Saúde, 2020</a
-					>
+					<a>BRASIL. Ministério da Saúde, 2020</a>
 				</p>
 			</section>
 
@@ -508,7 +506,7 @@
 							alt="" />
 					</div>
 					<div>
-						<h2 class="text-5xl text-rose-500 font-bold uppercase mb-8">
+						<h2 class="lg:text-5xl text-3xl text-rose-500 font-bold uppercase mb-8">
 							O que podemos Fazer?
 						</h2>
 						<ul class="list-disc list-inside space-y-2 text-xl">
@@ -521,16 +519,12 @@
 				</div>
 				<p class="mt-4 text-sm text-right">
 					Fonte:
-					<a
-						href="https://aps-repo.bvs.br/aps/quais-os-riscos-do-uso-prolongado-dos-benzodiazepinicos/"
-						class="text-blue-500"
-						>WORLD HEALTH ORGANIZATION (WHO), 2014; BRASIL, 2020.</a
-					>
+					<a>WORLD HEALTH ORGANIZATION (WHO), 2014; BRASIL, 2020.</a>
 				</p>
 			</section>
 
 			<section class="lg:px-[85px] px-8 bg-rose-50 pt-24 pb-12">
-				<h2 class="text-3xl md:text-5xl font-bold uppercase text-center mb-8">
+				<h2 class="lg:text-5xl text-3xl font-bold uppercase text-center mb-8">
 					Principais Antibióticos
 				</h2>
 				<p class="text-center text-rose-500 text-xl mb-12">
@@ -674,10 +668,12 @@
 			</section>
 		</section>
 
-		<section id="receituarios" class="content-tab">
+		<section id="receituarios" class="content-tab" hidden>
 			<section class="bg-gray-100 lg:px-[85px] px-8 py-12">
 				<div class="text-center mb-12">
-					<h2 class="text-5xl font-bold uppercase mb-3">Receita branca</h2>
+					<h2 class="lg:text-5xl text-3xl font-bold uppercase mb-3">
+						Receita branca
+					</h2>
 					<h3>
 						Utilizada na prescrição de substâncias classificadas nas listas de C1 a
 						C5.
@@ -719,17 +715,12 @@
 				</div>
 				<p class="mt-4 text-sm text-right">
 					Fonte:
-					<a
-						target="_blank"
-						href="https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/controlados"
-						class="text-blue-500"
-						>Produtos controlados</a
-					>
+					<a target="_blank">Portaria SVS/MS nº 344, de 12 de maio de 1998,</a>
 				</p>
 			</section>
 			<section class="bg-blue-100 lg:px-[85px] px-8 py-12">
 				<div class="text-center mb-12">
-					<h2 class="text-5xl font-bold uppercase mb-3">Receita Azul</h2>
+					<h2 class="lg:text-5xl text-3xl font-bold uppercase mb-3">Receita Azul</h2>
 					<h3>Destinada a medicamentos com alto potencial de causar dependência.</h3>
 				</div>
 				<div class="flex items-center justify-center">
@@ -749,17 +740,14 @@
 				</div>
 				<p class="mt-4 text-sm text-right">
 					Fonte:
-					<a
-						target="_blank"
-						href="https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/controlados"
-						class="text-blue-500"
-						>Produtos controlados</a
-					>
+					<a target="_blank">Portaria SVS/MS nº 344, de 12 de maio de 1998</a>
 				</p>
 			</section>
 			<section class="bg-yellow-100 lg:px-[85px] px-8 py-12">
 				<div class="text-center mb-12">
-					<h2 class="text-5xl font-bold uppercase mb-3">Receita amarela</h2>
+					<h2 class="lg:text-5xl text-3xl font-bold uppercase mb-3">
+						Receita amarela
+					</h2>
 					<h3>Medicamentos entorpecentes e psicotrópicos incluídos na lista A.</h3>
 				</div>
 				<div class="grid lg:grid-cols-3 gap-6">
@@ -789,12 +777,7 @@
 				</div>
 				<p class="mt-4 text-sm text-right">
 					Fonte:
-					<a
-						target="_blank"
-						href="https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/controlados"
-						class="text-blue-500"
-						>Produtos controlados</a
-					>
+					<a target="_blank">Portaria SVS/MS nº 344, de 12 de maio de 1998</a>
 				</p>
 			</section>
 			<section class="lg:px-[85px] px-8 py-12">
@@ -806,7 +789,7 @@
 							alt="" />
 					</div>
 					<div>
-						<h2 class="text-5xl text-rose-500 font-bold uppercase mb-8">
+						<h2 class="lg:text-5xl text-3xl text-rose-500 font-bold uppercase mb-8">
 							O que precisa conter nas receitas?
 						</h2>
 						<ul class="list-disc space-y-2 text-xl">
@@ -825,15 +808,13 @@
 				<p class="mt-4 text-sm text-right">
 					Fonte:
 					<a
-						href="https://aps-repo.bvs.br/aps/quais-os-riscos-do-uso-prolongado-dos-benzodiazepinicos/"
-						class="text-blue-500"
-						>WORLD HEALTH ORGANIZATION (WHO), 2014; BRASIL, 2020.</a
+						>Portaria SVS/MS nº 344/1998 e Lei nº 13.732, de 8 de novembro de 2018</a
 					>
 				</p>
 			</section>
 			<section class="bg-pink-50 lg:px-[85px] px-8 py-12">
 				<div class="text-center mb-12">
-					<h2 class="text-5xl font-bold uppercase mb-3">
+					<h2 class="lg:text-5xl text-3xl font-bold uppercase mb-3">
 						Qual a validade das receitas?
 					</h2>
 					<h3 class="text-rose-500">
@@ -867,11 +848,8 @@
 				</div>
 				<p class="mt-4 text-sm text-right">
 					Fonte:
-					<a
-						target="_blank"
-						href="https://www.gov.br/anvisa/pt-br/assuntos/medicamentos/controlados"
-						class="text-blue-500"
-						>Produtos controlados</a
+					<a target="_blank"
+						>Portaria SVS/MS nº 344/1998 e Lei nº 13.732, de 8 de novembro de 2018</a
 					>
 				</p>
 			</section>
@@ -879,7 +857,7 @@
 				<div class="grid lg:grid-cols-2 items-center gap-28">
 					<div>
 						<h4 class="uppercase text-rose-500 mb-6 text-2xl">O que é o</h4>
-						<h2 class="text-5xl font-bold uppercase mb-8">
+						<h2 class="lg:text-5xl text-3xl font-bold uppercase mb-8">
 							Termo de responsabilidade
 						</h2>
 						<div
@@ -906,22 +884,21 @@
 				</div>
 				<p class="mt-4 text-sm text-right">
 					Fonte:
-					<a
-						href="https://aps-repo.bvs.br/aps/quais-os-riscos-do-uso-prolongado-dos-benzodiazepinicos/"
-						class="text-blue-500"
-						>Portaria SVS/MS nº 344/1998</a
-					>
+					<a>Portaria SVS/MS nº 344/1998</a>
 				</p>
 			</section>
 			<section class="bg-pink-50 lg:px-[85px] px-8 py-12">
 				<div class="text-center mb-12">
-					<h2 class="text-5xl font-bold uppercase mb-3">Tratamento dispensado</h2>
+					<h2 class="lg:text-5xl text-3xl font-bold uppercase mb-3">
+						Tratamento dispensado
+					</h2>
 					<h3>
-						Todos os tratamentos devem ser liberados de acordo com a posologia prescrita pelo médico. 
+						Todos os tratamentos devem ser liberados de acordo com a posologia
+						prescrita pelo médico.
 					</h3>
 				</div>
 				<div
-					class="flex flex-wrap justify-center gap-6 uppercase font-semibold w-full">
+					class="flex flex-wrap justify-center gap-6 uppercase font-semibold w-full text-center">
 					<div class="p-3 rounded-full bg-rose-500 text-white">
 						Psicotrópico: 60 dias
 					</div>
@@ -940,9 +917,117 @@
 					<div class="p-3 rounded-full bg-rose-500 text-white">
 						Antibiótico: de acordo com a posologia prescrita
 					</div>
-					
 				</div>
 				<p class="mt-4 text-sm text-right">
+					Fonte:
+					<a target="_blank">SVS/MS nº 344/1998</a>
+				</p>
+			</section>
+		</section>
+
+		<section id="efeitos-colaterais" class="content-tab">
+			<section class="bg-pink-50 py-16 lg:px-[85px] px-8">
+				<div class="px-4 space-y-4 text-justify">
+					<h1 class="lg:text-5xl text-3xl font-bold uppercase text-center mb-8">
+						O Que São Efeitos Colaterais?
+					</h1>
+					<p>
+						Os efeitos colaterais são reações indesejadas ou não intencionais que
+						ocorrem após a administração de um medicamento, podendo variar em
+						intensidade e manifestação. Eles diferem dos efeitos terapêuticos
+						desejados, que são os principais objetivos do tratamento.
+					</p>
+				</div>
+			</section>
+			<section class="lg:px-[85px] px-8 bg-pink-50 py-12">
+				<h2 class="lg:text-5xl text-3xl font-bold uppercase text-center mb-12">
+					Causas dos efeitos colaterais
+				</h2>
+				<div class="grid lg:grid-cols-2 gap-6">
+					<article class="bg-white p-7">
+						<h3 class="text-rose-500 text-xl font-bold uppercase mb-4">
+							Ajuste de Dosagem
+						</h3>
+						<p>
+							A quantidade de um medicamento pode ser excessiva ou insuficiente para o
+							organismo de cada pessoa. Por isso, efeitos colaterais surgem quando a
+							dose não está ideal, sendo necessário ajustá-la conforme a resposta ao
+							tratamento.
+						</p>
+					</article>
+					<article class="bg-white p-7">
+						<h3 class="text-rose-500 text-xl font-bold uppercase mb-4">
+							Reação Individual aos Ingredientes
+						</h3>
+						<p>
+							Cada organismo reage de forma única a substâncias químicas. Alergias,
+							sensibilidades ou predisposições genéticas podem fazer com que um
+							componente da medicação cause efeitos colaterais inesperados.
+						</p>
+					</article>
+					<article class="bg-white p-7">
+						<h3 class="text-rose-500 text-xl font-bold uppercase mb-4">
+							Dano Colateral em Células Saudáveis
+						</h3>
+						<p>
+							Algumas drogas, como as usadas em tratamentos agressivos, não conseguem
+							distinguir células doentes das saudáveis, atacando ambas. Esse dano
+							colateral gera efeitos adversos no corpo.
+						</p>
+					</article>
+					<article class="bg-white p-7">
+						<h3 class="text-rose-500 text-xl font-bold uppercase mb-4">
+							Interação entre Medicamentos
+						</h3>
+						<p>
+							O uso simultâneo de diferentes remédios pode fazer com que eles alterem o
+							efeito um do outro, aumentando a toxicidade ou diminuindo a eficácia, e
+							provocando efeitos colaterais.
+						</p>
+					</article>
+				</div>
+				<p class="mt-4 text-sm text-right">
+					Fonte:
+					<a
+						target="_blank"
+						href="https://eurofarma.com.br/artigos/saiba-o-que-sao-efeitos-colaterais"
+						class="text-blue-500"
+						>O que são efeitos colaterais</a
+					>
+				</p>
+			</section>
+			<section class="bg-pink-50 lg:px-[85px] px-8 py-12">
+				<div class="text-center mb-12">
+					<h2 class="lg:text-5xl text-3xl font-bold uppercase">
+						Tipos de efeitos colaterais
+					</h2>
+				</div>
+				<div
+					class="flex flex-wrap justify-center gap-6 uppercase font-semibold w-full text-center">
+					<div class="p-3 rounded-full bg-rose-500 text-white">Constipação</div>
+					<div class="p-3 rounded-full bg-rose-500 text-white">Dores de cabeça</div>
+					<div class="p-3 rounded-full bg-rose-500 text-white">Boca seca</div>
+					<div class="p-3 rounded-full bg-rose-500 text-white">Sonolência</div>
+					<div class="p-3 rounded-full bg-rose-500 text-white">Tontura</div>
+					<div class="p-3 rounded-full bg-rose-500 text-white">Dermatite</div>
+					<div class="p-3 rounded-full bg-rose-500 text-white">Diarréia</div>
+					<div class="p-3 rounded-full bg-rose-500 text-white">Náusea</div>
+					<div class="p-3 rounded-full bg-rose-500 text-white">Vômitos</div>
+					<div class="p-3 rounded-full bg-red-900 text-white">
+						Ritmos cardíacos anormais
+					</div>
+					<div class="p-3 rounded-full bg-red-900 text-white">
+						Sangramento interno
+					</div>
+				</div>
+
+				<div class="mt-8 text-white flex justify-center">
+					<h2 class="text-xl uppercase text-center py-2 px-6 bg-rose-500 w-fit">
+						Se caso constatar e persistir um desses sintomas procurar um médico!
+					</h2>
+				</div>
+
+				<!-- <p class="mt-4 text-sm text-right">
 					Fonte:
 					<a
 						href="https://www.msdmanuals.com/pt/profissional/tópicos-especiais/drogas-ilícitas-e-intoxicantes/sedativos"
@@ -950,16 +1035,12 @@
 						class="text-blue-500"
 						>Sedativos</a
 					>
-				</p>
+				</p> -->
 			</section>
 		</section>
 
-		<section id="efeitos-colaterais" class="content-tab" hidden>
-			<h1>Efeitos Colaterais</h1>
-		</section>
-
 		<section class="flex flex-col items-center py-16 lg:px-[85px] px-8">
-			<h2 class="text-3xl md:text-5xl font-bold uppercase text-center mb-8">
+			<h2 class="lg:text-5xl text-3xl font-bold uppercase text-center mb-8">
 				Se souber de venda ilegal:<br />Denuncie!
 			</h2>
 			<p class="text-center text-rose-500 text-xl mb-12">
@@ -1020,7 +1101,7 @@
 			<h2 class="text-4xl font-bold text-rose-500 uppercase mb-4">
 				Sobre o projeto
 			</h2>
-			<p class="text-xl font-bold">Projeto Integrador 2024.2</p>
+			<p class="text-xl font-bold">Projeto Integrador 2025.1</p>
 			<p class="mt-2">
 				<strong>Orientadora:</strong> Profª Ma. Fani Ribeiro Silva
 			</p>
@@ -1035,7 +1116,7 @@
 		</section>
 
 		<footer class="bg-zinc-800 text-white py-6 text-center mt-16">
-			<p class="text-sm">© 2024 Todos os direitos reservados</p>
+			<p class="text-sm">© 2025 Todos os direitos reservados</p>
 		</footer>
 		<script>
 			document.addEventListener("click", (e) => {

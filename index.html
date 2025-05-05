@@ -31,8 +31,6 @@
 				cursor: pointer;
 				transition: ease 0.25s;
 				border: 1px solid #00000000;
-				border-bottom: none;
-				border-radius: 10px 10px 0 0;
 			}
 
 			.tab-link:hover {
@@ -40,8 +38,8 @@
 			}
 
 			.tab-active {
-				background: white;
-				border-color: #00000030;
+				background: oklch(64.5% 0.246 16.439);
+				color: white;
 			}
 
 			.tab-active:hover {
@@ -65,32 +63,32 @@
 		</header>
 
 		<nav class="pt-16 bg-pink-50 lg:px-8 px-2">
-			<ul class="flex flex-wrap gap-2 border-b text-rose-500">
+			<ul class="flex flex-wrap gap-2 text-rose-500">
 				<li>
 					<a
 						data-tab="psicotropicos"
-						class="tab-link tab-active py-2 px-4 font-semibold uppercase md:text-2xl text-lg"
+						class="tab-link rounded-full tab-active py-2 px-4 font-semibold uppercase md:text-2xl text-lg"
 						>Psicotrópicos</a
 					>
 				</li>
 				<li>
 					<a
 						data-tab="antibioticos"
-						class="tab-link py-2 px-4 font-semibold uppercase md:text-2xl text-lg"
+						class="tab-link rounded-full py-2 px-4 font-semibold uppercase md:text-2xl text-lg"
 						>Antibióticos</a
 					>
 				</li>
 				<li>
 					<a
 						data-tab="receituarios"
-						class="tab-link py-2 px-4 font-semibold uppercase md:text-2xl text-lg"
+						class="tab-link rounded-full py-2 px-4 font-semibold uppercase md:text-2xl text-lg"
 						>Receituários</a
 					>
 				</li>
 				<li>
 					<a
 						data-tab="efeitos-colaterais"
-						class="tab-link py-2 px-4 font-semibold uppercase md:text-2xl text-lg"
+						class="tab-link rounded-full py-2 px-4 font-semibold uppercase md:text-2xl text-lg"
 						>Efeitos Colaterais</a
 					>
 				</li>
@@ -781,7 +779,7 @@
 							Apresentam risco de abuso. Exemplo: Pentazocina (analgésico opioide)
 						</p>
 					</article>
-					<img class="" src="./imgs/receita-amarela.png" alt="">
+					<img class="" src="./imgs/receita-amarela.png" alt="" />
 				</div>
 				<p class="mt-4 text-sm text-right">
 					Fonte:
@@ -1005,11 +1003,11 @@
 				</div>
 				<div class="flex justify-center mt-8">
 					<a
-					target="_blank"
-					href="https://consultas.anvisa.gov.br/"
-					class="bg-rose-500 text-white rounded-full p-4 uppercase font-semibold"
-					>Bulário Eletrônico</a
-				>
+						target="_blank"
+						href="https://consultas.anvisa.gov.br/"
+						class="bg-rose-500 text-white rounded-full p-4 uppercase font-semibold"
+						>Bulário Eletrônico</a
+					>
 				</div>
 			</section>
 			<section class="bg-pink-50 lg:px-[85px] px-8 py-12">
@@ -1037,9 +1035,12 @@
 					</div>
 				</div>
 
-				<div class="mt-8 text-white flex justify-center items-center flex-col gap-4 justify-center">
-					<a href="https://www.gov.br/anvisa/pt-br/assuntos/fiscalizacao-e-monitoramento/notificacoes/vigimed"
-					target="_blank" class="uppercase text-lg text-center text-blue-500 w-fit">
+				<div
+					class="mt-8 text-white flex justify-center items-center flex-col gap-4 justify-center">
+					<a
+						href="https://www.gov.br/anvisa/pt-br/assuntos/fiscalizacao-e-monitoramento/notificacoes/vigimed"
+						target="_blank"
+						class="uppercase text-lg text-center text-blue-500 w-fit">
 						Informe seus efeitos colaterais aqui!
 					</a>
 					<h2 class="text-xl uppercase text-center py-2 px-6 bg-rose-500 w-fit">
@@ -1103,6 +1104,17 @@
 						class="bg-white text-rose-500 font-bold text-sm uppercase px-6 py-3 inline-block">
 						Clique aqui para saber mais
 					</a>
+					<div class="pt-8">
+						<h1 class="uppercase font-bold text-3xl text-white mb-4">
+							Em caso de Dúvidas
+						</h1>
+						<a
+							target="_blank"
+							href="mailto:alunasfarmacia.uniso@gmail.com"
+							class="bg-white text-rose-700 rounded p-2"
+							>✉️ alunasfarmacia.uniso@gmail.com</a
+						>
+					</div>
 				</div>
 			</div>
 		</section>
